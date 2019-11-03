@@ -43,7 +43,10 @@ steps:
     Contents: |
       **\*.dacpac
       **\*.zip
+      **\deploy\**
+      **\Utility\**
     TargetFolder: '$(Build.ArtifactStagingDirectory)'
+    CleanTargetFolder: true
     flattenFolders: true
 
 - task: PublishBuildArtifacts@1
