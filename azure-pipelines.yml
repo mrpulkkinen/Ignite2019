@@ -43,6 +43,8 @@ steps:
     Contents: |
       **\*.dacpac
       **\*.zip
+      \deploy\
+      \Utility\
     TargetFolder: '$(Build.ArtifactStagingDirectory)'
     flattenFolders: true
 
